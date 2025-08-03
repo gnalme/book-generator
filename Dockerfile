@@ -10,14 +10,16 @@ RUN npm run build
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS backend-build
 WORKDIR /app
 COPY backend/BookGenerator/ ./BookGenerator/
-RUN dotnet restore BookGenerator/BookGenerator/BookGenerator.csproj
-RUN dotnet publish BookGenerator/BookGenerator/BookGenerator.csproj -c Release -o out
+WORKDIR /app/BookGenerator
+RUN dotnet restore
+RUN dotnet publish -c Release -o /app/publish
 
 # --- Финальный образ ---
 FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS final
 WORKDIR /app
-COPY --from=backend-build /app/out ./
+COPY --from=backend-build /app/publish ./
 COPY --from=frontend-build /app/frontend/dist ./wwwroot
 
 EXPOSE 8080
 ENTRYPOINT ["dotnet", "BookGenerator.dll"]
+

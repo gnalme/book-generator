@@ -10,6 +10,17 @@ var app = builder.Build();
 app.UseSwagger();
 app.UseSwaggerUI();
 
+app.UseDefaultFiles();
+app.UseStaticFiles();
+
+app.UseRouting();
+
+app.UseEndpoints(e =>
+{
+
+    e.MapFallbackToFile("index.html");
+});
+
 
 app.MapGet("/api/books", ([FromQuery] string seed, [FromQuery] int page, [FromQuery] string lang, [FromQuery] double likes, [FromQuery] double reviews) =>
 {
