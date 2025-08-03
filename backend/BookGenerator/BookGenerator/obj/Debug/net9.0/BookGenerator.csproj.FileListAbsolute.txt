@@ -35,3 +35,4 @@ C:\Users\eraiv\OneDrive\Рабочий стол\BookGenerator\backend\BookGenera
 C:\Users\eraiv\OneDrive\Рабочий стол\BookGenerator\backend\BookGenerator\BookGenerator\obj\Debug\net9.0\BookGenerator.pdb
 C:\Users\eraiv\OneDrive\Рабочий стол\BookGenerator\backend\BookGenerator\BookGenerator\obj\Debug\net9.0\BookGenerator.genruntimeconfig.cache
 C:\Users\eraiv\OneDrive\Рабочий стол\BookGenerator\backend\BookGenerator\BookGenerator\obj\Debug\net9.0\ref\BookGenerator.dll
+C:\Users\eraiv\OneDrive\Рабочий стол\BookGenerator\backend\BookGenerator\BookGenerator\obj\Debug\net9.0\BookGenerator.sourcelink.json
