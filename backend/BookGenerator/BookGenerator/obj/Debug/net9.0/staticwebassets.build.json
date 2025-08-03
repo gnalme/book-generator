@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "PhbnR3ZTKwIoYTUa0VAUZMwYOhDFSZy7MkoTldxuZTQ=",
+  "Source": "BookGenerator",
+  "BasePath": "_content/BookGenerator",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

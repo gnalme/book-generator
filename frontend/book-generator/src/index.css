@@ -1,0 +1,79 @@
+@tailwind base; 
+@tailwind components; 
+@tailwind utilities;
+
+body {
+    margin: 1px;
+    background-color: #F7FAFB;
+    font-family: "Rubik", sans-serif;
+}
+
+.like {
+    padding: 5px 12px;
+    background-color: blue;
+    border-radius: 18px;
+    color: white;
+    display: flex;
+    gap: 6px;
+    margin-top: 20px;
+}
+
+.mz {
+margin-block-start: 0em !important;
+    margin-block-end: 0em !important;
+}
+
+.comm {
+    margin-bottom: 5px !important;
+}
+
+.reviwer {
+    
+    font-size: 14px;
+    color: gray;
+    margin-top: 5px !important;
+}
+
+.head, .card {
+    border: 1px solid gray;
+}
+
+.head, .index {
+    font-weight: 700;
+}
+
+.head {
+    border-bottom: solid 2px !important;
+}
+
+#up {
+    background-color: #bcd0e9;
+}
+
+form {
+    display:flex;
+  flex-direction:row;
+}
+form:focus-within { 
+  outline: 1px ;
+}
+
+.rand {
+    flex-grow:2;
+    border-right: none;
+    border-radius: 3px 0px 0px 3px;
+    letter-spacing: 1px;
+}
+.rand:focus{
+    outline: none;
+}
+
+.randBut {
+    background-color: white;
+    border-left: none;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    border-top: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
